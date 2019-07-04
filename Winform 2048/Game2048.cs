@@ -236,6 +236,6 @@ namespace Winform_2048
 
         public event Action<int[,]> UpdateGrid;//更新界面
 
-        public event Action<string> SendMessage;
+        public event Action<string> SendMessage;//向界面发送消息
     }
 }
