@@ -32,7 +32,7 @@ namespace Winform_2048
             game2048.StartGame();
         }
 
-        void InitialGrid()
+        void InitialGrid()//初始化表格
         {
             this.dataGridView1.Size = new Size(500, 500);//长宽
 
@@ -63,7 +63,7 @@ namespace Winform_2048
 
         }
 
-        void DataGrid_Paint(object sender, PaintEventArgs e)
+        void DataGrid_Paint(object sender, PaintEventArgs e)//
         {
             e.Graphics.DrawLine(new Pen(Color.Black), 125, 0, 125, 500);
             e.Graphics.DrawLine(new Pen(Color.Black), 250, 0, 250, 500);
@@ -88,7 +88,6 @@ namespace Winform_2048
         }
 
         event Action<Keys> MoveEvent;//移动事件
-
         
         void UpdateGridCallback(int[,] map)//回调函数 更新表格
         {
@@ -122,12 +121,12 @@ namespace Winform_2048
             }
         }
 
-        void MessageCallback(string msg)
+        void MessageCallback(string msg)//回调函数 业务层的消息
         {
             MessageBox.Show(msg);
         }
 
-        private void btn_Restart_Click(object sender, EventArgs e)
+        private void btn_Restart_Click(object sender, EventArgs e)//重新开始游戏
         {
             game2048.StartGame();
         }

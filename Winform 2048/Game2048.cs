@@ -20,9 +20,7 @@ namespace Winform_2048
     {
         int[,] map = new int[4, 4];
         int[,] mapMoveBefore = new int[4, 4];
-
-        bool isWin = false;
-
+        
         void InitialMap()//初始化map数组
         {
             for (int i = 0; i < 4; i++)
@@ -51,8 +49,7 @@ namespace Winform_2048
 
         public Game2048()
         {
-            //InitialMap();
-            //UpdateMapMoveBefore();            
+                      
         }
         
         public void StartGame()
