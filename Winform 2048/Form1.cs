@@ -41,6 +41,8 @@ namespace Winform_2048
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowDrop = false;
             this.dataGridView1.AllowUserToOrderColumns = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ReadOnly = true;
             
             this.dataGridView1.ColumnHeadersVisible = false;
